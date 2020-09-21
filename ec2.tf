@@ -1,7 +1,7 @@
 # application EC2 Instance.
 
 terraform {
-  required_version = "~> 0.12.9"
+  required_version = "~> 0.13.3"
 }
 
 provider "aws" {
