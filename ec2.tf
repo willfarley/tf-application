@@ -1,5 +1,14 @@
 # application EC2 Instance.
 
+terraform {
+  required_version = "~> 0.12.9"
+}
+
+provider "aws" {
+  region  = "eu-west-2"
+#  version = "~> 2.0"
+}
+
 resource "aws_instance" "application" {
   ami             = "${var.application_ami_id}"
   instance_type   = "${var.application_instance_type}"
